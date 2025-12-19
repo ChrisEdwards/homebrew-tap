@@ -1,24 +1,24 @@
 class Prt < Formula
   desc "Aggregate GitHub PR status across multiple local repositories"
   homepage "https://github.com/ChrisEdwards/pr-tracker"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/ChrisEdwards/pr-tracker/releases/download/v0.1.0/prt-darwin-arm64"
-      sha256 "b98d181430623a3ebca5b6e6015108cd413b98b80935145d00b5ba746cbbd140"
+      url "https://github.com/ChrisEdwards/pr-tracker/releases/download/v0.2.0/prt-darwin-arm64"
+      sha256 "0c180a75e72ad80a74283dc55ec43201a34560dccb3e01cae2734d8d8f9cdf7d"
     end
     on_intel do
-      url "https://github.com/ChrisEdwards/pr-tracker/releases/download/v0.1.0/prt-darwin-amd64"
-      sha256 "7438c0fdd22431a7ce8cbadd492e95d351fbe9c8ea869d1268140cc448b0f8ae"
+      url "https://github.com/ChrisEdwards/pr-tracker/releases/download/v0.2.0/prt-darwin-amd64"
+      sha256 "5f0ed2982bafbd19385820e76968815a0ea40c02f36f1e23cd2328a7f14870f9"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/ChrisEdwards/pr-tracker/releases/download/v0.1.0/prt-linux-amd64"
-      sha256 "e7c87bff84322b018276546a508e31e34bde6fbbe6e1e3bdb7a38ebd1fb4d7e0"
+      url "https://github.com/ChrisEdwards/pr-tracker/releases/download/v0.2.0/prt-linux-amd64"
+      sha256 "b2f69068895fe5deac6192dba8c4666b5c6868b9d56879e1378f20fe46cfa8af"
     end
   end
 
