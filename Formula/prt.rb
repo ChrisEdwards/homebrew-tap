@@ -5,23 +5,23 @@
 class Prt < Formula
   desc "GitHub PR Tracker - Aggregate PR status across multiple repositories"
   homepage "https://github.com/ChrisEdwards/pr-tracker"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   depends_on "gh" => :recommended
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ChrisEdwards/pr-tracker/releases/download/v0.3.0/prt_0.3.0_darwin_amd64.tar.gz"
-      sha256 "0bb1c86e0ed26a1d759c5db8eb69d65f59b93f31576c9fa676a25ae80b797080"
+      url "https://github.com/ChrisEdwards/pr-tracker/releases/download/v0.4.0/prt_0.4.0_darwin_amd64.tar.gz"
+      sha256 "fa81b077f9dc7c4aeab936ceac51bf784603a5d5101f37df4620f3e3e2c02e74"
 
       def install
         bin.install "prt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ChrisEdwards/pr-tracker/releases/download/v0.3.0/prt_0.3.0_darwin_arm64.tar.gz"
-      sha256 "c415347d1150dbe8f199ee40bf7ed5e087da78338dc98bad132605cb8063c9b7"
+      url "https://github.com/ChrisEdwards/pr-tracker/releases/download/v0.4.0/prt_0.4.0_darwin_arm64.tar.gz"
+      sha256 "c73447274f5b9cab51faf53c40f4bb9f1cc40100b45e47782ace5416ffaa922d"
 
       def install
         bin.install "prt"
@@ -31,15 +31,15 @@ class Prt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ChrisEdwards/pr-tracker/releases/download/v0.3.0/prt_0.3.0_linux_amd64.tar.gz"
-      sha256 "009592217eb3f858207cdd44b487adc62fec1e65157105fa4042997c6d520244"
+      url "https://github.com/ChrisEdwards/pr-tracker/releases/download/v0.4.0/prt_0.4.0_linux_amd64.tar.gz"
+      sha256 "6a832eee21e3c24a1227ad65d359c298e5d69decfebf6239a770b6c173bc64a1"
       def install
         bin.install "prt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ChrisEdwards/pr-tracker/releases/download/v0.3.0/prt_0.3.0_linux_arm64.tar.gz"
-      sha256 "e6e3217d0c0190d46073e6b9aaac95f91b04ccc905733b1a8705746d71b44bc8"
+      url "https://github.com/ChrisEdwards/pr-tracker/releases/download/v0.4.0/prt_0.4.0_linux_arm64.tar.gz"
+      sha256 "57782889ae1a7d588d7ff917aac3709f84ca0e8e77e9dcc64f8f3f1e8ea64f7d"
       def install
         bin.install "prt"
       end
