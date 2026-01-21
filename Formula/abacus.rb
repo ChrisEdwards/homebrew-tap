@@ -1,26 +1,26 @@
 class Abacus < Formula
   desc "TUI viewer for Beads issue tracking"
   homepage "https://github.com/ChrisEdwards/abacus"
-  version "0.7.1"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ChrisEdwards/abacus/releases/download/v0.7.1/abacus_0.7.1_darwin_arm64.tar.gz"
-      sha256 "05f3ffea7b05c970c17da7279415fa2ad8cf162f514e951bb93c4d5f1047d3d1"
+      url "https://github.com/ChrisEdwards/abacus/releases/download/v0.8.0/abacus_0.8.0_darwin_arm64.tar.gz"
+      sha256 "99f964cc868130daeac0b3c508b0039f4dd0bc7540517cd0ebc3a656d06a498e"
     elsif Hardware::CPU.intel?
-      url "https://github.com/ChrisEdwards/abacus/releases/download/v0.7.1/abacus_0.7.1_darwin_amd64.tar.gz"
-      sha256 "3d97f1a45a8b9d49086caaf6357940ed26331552f73805aa5acbfa4ce87ccd76"
+      url "https://github.com/ChrisEdwards/abacus/releases/download/v0.8.0/abacus_0.8.0_darwin_amd64.tar.gz"
+      sha256 "3b170f40df3631188e017cde47bde44809da7ccfae6edeb667507d686a39bdc3"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ChrisEdwards/abacus/releases/download/v0.7.1/abacus_0.7.1_linux_arm64.tar.gz"
-      sha256 "3dab374b2f7272d03a1597150c57de4179905e348919b36d3e21950ed58f2dc8"
+      url "https://github.com/ChrisEdwards/abacus/releases/download/v0.8.0/abacus_0.8.0_linux_arm64.tar.gz"
+      sha256 "a1099cef365bf345101cf4ce4110c0f221febefb326770a5a6131590c8933302"
     elsif Hardware::CPU.intel?
-      url "https://github.com/ChrisEdwards/abacus/releases/download/v0.7.1/abacus_0.7.1_linux_amd64.tar.gz"
-      sha256 "878d6159ca0e972607cdbabbfa08a61a634a17090a7c5153e0f74c6b54d6d8e0"
+      url "https://github.com/ChrisEdwards/abacus/releases/download/v0.8.0/abacus_0.8.0_linux_amd64.tar.gz"
+      sha256 "5ce49e37aeba75a91af94659dee6872e2466444467717163e6d39464a0ab1a05"
     end
   end
 
